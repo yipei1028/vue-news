@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<title>Vue NYT news</title>
+	<link rel="stylesheet" href="./style.css">
+</head>
+<body>
+	<div id="app">
+		<h2>Vue News</h2>
+		<div id="filter-container">
+			<select v-model="section" id="filter-selector">
+				<option v-for="section in sections" :value="section">{{ section }}</option>
+			</select>
+			<button v-on:click="getPosts(section)" id="filter-button">Retrieve</button>
+		</div>
+		<single-post :results="results"></single-post>
+	</div>
+</body>
+<script src="https://cdn.jsdelivr.net/npm/vue@2.5.17/dist/vue.js"></script>
+<script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+<script src="main.js"></script>
+</html>

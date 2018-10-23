@@ -1,0 +1,72 @@
+body {
+  width: 100%;
+  margin: 0 auto;
+  text-align: center;
+}
+
+body #app #filter-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 20px 25%;
+  height: 40px;
+}
+
+body #app #filter-container #filter-selector {
+  -webkit-box-flex: 3;
+      -ms-flex: 3;
+          flex: 3;
+  height: 100%;
+  margin-right: 10px;
+}
+
+body #app #filter-container #filter-button {
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+  height: 100%;
+}
+
+body .container {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 20% 20% 20% 20%;
+      grid-template-columns: 20% 20% 20% 20%;
+  grid-gap: 10px;
+  color: #444;
+  justify-items: center;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+}
+
+body .container .card {
+  background-color: #444;
+  color: #fff;
+  border-radius: 5px;
+  padding: 0px 20px;
+}
+
+body .container .card .card-title {
+  height: 40px;
+}
+
+body .container .card .card-image {
+  width: 100%;
+  margin: 10px 0px;
+}
+
+body .container .card .card-image img {
+  width: 100%;
+}
+
+body .container .card .card-abstract {
+  height: 80px;
+}
+/*# sourceMappingURL=style.css.map */
